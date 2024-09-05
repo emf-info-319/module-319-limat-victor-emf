@@ -10,6 +10,7 @@ public class TypesDeBase {
         int ageDans10Ans = age + 10;
         String nom = "Victor";
         System.out.println("Je m'apelle " + nom + " et j'ai " + ageDans10Ans + " années.");
+    
 
     }
 }
