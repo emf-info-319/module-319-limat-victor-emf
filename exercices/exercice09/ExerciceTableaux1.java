@@ -1,4 +1,4 @@
-package exercices.exercice09;
+
 
 import javax.print.DocFlavor.STRING;
 
@@ -6,6 +6,7 @@ import javax.print.DocFlavor.STRING;
  * ExerciceTableaux1
  */
 public class ExerciceTableaux1 {
+    
 
     public static void main(String[] args) {
 
