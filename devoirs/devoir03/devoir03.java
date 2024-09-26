@@ -4,7 +4,7 @@ public class devoir03 {
 
     public static void main(String[] args) {
         int jour = 24;
-        int mois = 9;
+        int mois = 02;
         int annee = 2024;
         int jourdelAn = 0;
         int[] nbJourmois = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
@@ -19,7 +19,7 @@ public class devoir03 {
 
         {
             for (int i = 0; i < mois - 1; i++) {
-                jourdelAn += nbJourmois[i];
+                jourdelAn += nbJourmois[i];  // += ça fait ---> jourdeLan = jourdeLan + nbJourmois[1] 
 
             }
             jourdelAn += jour;
