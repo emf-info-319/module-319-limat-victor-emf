@@ -25,18 +25,16 @@ public class ExerciceTableaux3 {
         for (int i = 0; i < monTableau.length; i++) {
 
             // calculer la somme
-            sommeTotal = sommeTotal + monTableau[i];
-            
-                System.out.println("Note numéro " + i + " -> " + monTableau[i]);
-            }
-            // calculer la moyenne de la somme et déclarer la variable moyenne
-            // utiliser ""float" ou ""double" comme type de base (pr les nb à virgule)
-            float moyenne = (float) sommeTotal / monTableau.length; //monTableau.lenght = 10
+            sommeTotal += monTableau[i];
 
+            System.out.println("Note numéro " + i + " -> " + monTableau[i]);
+        }
+        // calculer la moyenne de la somme et déclarer la variable moyenne
+        // utiliser ""float" ou ""double" comme type de base (pr les nb à virgule)
+        float moyenne = (float) sommeTotal / monTableau.length; // monTableau.lenght = 10
 
-            {
-                System.out.println("La moyenne des 10 élèves est " + moyenne);
-            }
+        {
+            System.out.println("La moyenne des 10 élèves est " + moyenne);
         }
     }
-
+}
