@@ -9,11 +9,14 @@ public class E0_Révision {
         int[] notesObtenues = new int[NBRE_NOTES];
         for (int i = 0; i < notesObtenues.length; i++) {
             notesObtenues[i] = (int)(Math.random() * (NOTE_MAX - NOTE_MIN + 1)) + NOTE_MIN;
+            
         }
-
+      
+        int totalNote = 0;
         for (int j = 0; j < notesObtenues.length; j++) {
+            totalNote += notesObtenues[j];
             System.out.println("La note obtenue est " + notesObtenues[j]);
-        switch (notesObtenues[i]) {
+        switch (notesObtenues[j]) {
 
             case 6:
             System.out.println("Très bien");
@@ -33,8 +36,15 @@ public class E0_Révision {
         }
         
     }
+    float moyenne = (float) totalNote / notesObtenues.length;
+   if (moyenne > 4) {
+    System.out.println("L'élève est promu !");
+    
+   }
+   else {
+    System.out.println("L'élève est non promu !");
+   }
         
     }
-
     
 }
