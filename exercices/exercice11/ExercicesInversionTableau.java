@@ -7,15 +7,16 @@ public class ExercicesInversionTableau {
 
     public static void main(String[] args) {
         int[] tableauInitial = new int[4];
+        System.out.println("Contenu du tableau initial :");
         for (int i = 0; i < tableauInitial.length; i++) {
-            System.out.println("Contenu du tableau initial : " + (tableauInitial[i] = (int)(Math.random() * (MAX - MIN + 1)) + MIN));
+            System.out.println("Tableau initial [" + i + "] = " + (tableauInitial[i] = (int)(Math.random() * (MAX - MIN + 1)) + MIN));
         }
-     
+        
+        System.out.println("Contenu du tableau final :");
         int[] tableauFinal = inverseLeTableau(tableauInitial);
         for (int i = 0; i < tableauFinal.length; i++) {
-            System.out.println("Contenu du tableau final : " + tableauFinal[i]);
+            System.out.println("Tableau final [" + i + "] = " + tableauFinal[i]);
         }
-
        
     }
 
@@ -28,17 +29,6 @@ public class ExercicesInversionTableau {
         }
         return tableauInverse;
     
-
-
-
-
     }
-
-
-
-
-
-
-
 
 }
