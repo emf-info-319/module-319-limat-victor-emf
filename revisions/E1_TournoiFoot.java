@@ -6,11 +6,12 @@ public class E1_TournoiFoot {
 
     public static void main(String[] args) {
 
-        for (int i = 0; i < EQUIPES.length; i++) {
-            simuleMatch(i, i + 1);
-        }
-        
-        simuleMatch(EQUIPES.length - 1, 0);
+        simuleMatch(0, 1);
+        simuleMatch(1, 2);
+        simuleMatch(2, 3);
+        simuleMatch(3, 4);
+        simuleMatch(4, 5);
+        simuleMatch(5, 0);  
         
 
         System.out.println("-----------------------------");
@@ -22,7 +23,7 @@ public class E1_TournoiFoot {
         int[] gagnants = trouveGagnants();
         for (int k = 0; k < gagnants.length; k++) {
             int indexGagnant = gagnants[k];
-            System.out.println("L'équipe " + indexGagnant + "a gagné");
+            System.out.println("L'équipe " + EQUIPES[indexGagnant] + " a gagné");
         }
     }
 
@@ -58,10 +59,11 @@ public class E1_TournoiFoot {
                 compteurDesGagnants++;
             }
         }
+        int index = 0;
         int[] equipeGagnante = new int[compteurDesGagnants];
         for (int j = 0; j < pointsEquipes.length; j++) {
             if (pointsEquipes[j] == maxPts) {
-                equipeGagnante[j++] = j;
+                equipeGagnante[index++] = j;
             }
         }
         return equipeGagnante;
